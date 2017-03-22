@@ -26,7 +26,8 @@ SECRET_KEY = 'ppfq0+0^+ad*fxiay6je8#5f!#(w2ib+-wjqaq9o1$a!yi=u#e'
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'localhost'
+    'localhost',
+    'find-nearest-ubike-taipei.herokuapp.com',
 ]
 
 

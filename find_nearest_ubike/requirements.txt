@@ -1,6 +1,7 @@
-jupyter==1.0.0
-jupyter-client==5.0.0
-jupyter-console==5.1.0
-jupyter-core==4.3.0
+# jupyter==1.0.0
+# jupyter-client==5.0.0
+# jupyter-console==5.1.0
+# jupyter-core==4.3.0
+gunicorn==19.7.1
 requests==2.13.0
 Django==1.10.6
