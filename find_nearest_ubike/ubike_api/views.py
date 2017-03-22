@@ -61,7 +61,7 @@ def find_nearest_two_stop(lat, lng):
             if stop_data['act'] == '1': # station is avaliable
                 result = {}
                 result['station'] = stop_data['sna']
-                result['num_ubike'] = stop_data['sbi']
+                result['num_ubike'] = int(stop_data['sbi'])
                 result['total'] = stop_data['tot']
                 results.append(result)
         else:
@@ -130,5 +130,5 @@ def server_response(request):
             result = {}
             return JsonResponse({'code': status_code, 'result': result})
     else:
-        return JsonResponse({'error': 'method not allowd'})
+        return JsonResponse({'error': 'method not allowed'})
 
