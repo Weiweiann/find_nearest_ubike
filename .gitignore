@@ -1,1 +1,5 @@
 env
+
+find_nearest_ubike/ubike_api/__pycache__/
+
+find_nearest_ubike/find_nearest_ubike/__pycache__/
