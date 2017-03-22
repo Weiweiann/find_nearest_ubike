@@ -1,0 +1,1 @@
+web: gunicorn find_nearest_ubike.wsgi --log-file
