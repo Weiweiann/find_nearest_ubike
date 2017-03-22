@@ -125,7 +125,7 @@ def server_response(request):
                 response['result'] = result_filter
 
             return JsonResponse(response)
-        except RuntimeError as e:
+        except:
             status_code = -3
             result = {}
             return JsonResponse({'code': status_code, 'result': result})
