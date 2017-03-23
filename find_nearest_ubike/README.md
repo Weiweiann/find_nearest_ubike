@@ -10,6 +10,7 @@
 ### API usage
 
 - /v1/ubike-station/taipei
+
   - Method: `GET`
   
   - Parameters: 
@@ -23,16 +24,17 @@
 		- code: 
 		    
 		  - 1: all ubkie stations are full
-		  - 0: OK
+		  - 0: OK (exclude unavaliable station)
 		  - -1: invalid latitude and longitude
 		  - -2: location not in Taipei city
 		  - -3: system error
 		  
 		- result: 
+		
 		  - station: $name-of-the-station 
 		  - num_ubike: $number-of-avaliable-bike 
 
-  - example 
+  - Example 
     
     ```
     GET /v1/ubike-station/taipei?lat=25.017966&lng=121.543967
